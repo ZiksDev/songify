@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Songify - Daily Random Songs</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎵 Songify</h1>
+            <p class="tagline">Discover new music every day</p>
+        </header>
+
+        <main>
+            <div class="date-display">
+                <span id="current-date"></span>
+            </div>
+
+            <h2>Today's Random Picks</h2>
+            
+            <div class="songs-grid" id="songs-container">
+                <!-- Songs will be loaded here -->
+            </div>
+
+            <button class="refresh-btn" id="refresh-btn">
+                🔄 Get New Songs
+            </button>
+        </main>
+
+        <footer>
+            <p>Made with ❤️ for music lovers</p>
+        </footer>
+    </div>
+
+    <script src="songs.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
