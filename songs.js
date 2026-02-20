@@ -58,6 +58,7 @@ async function fetchSongs(count = 5) {
             artist: song.artistName,
             album: song.collectionName || "Single",
             cover: song.artworkUrl100.replace("100x100", "600x600"),
+            previewUrl: song.previewUrl || null,
             spotifyUrl: `https://open.spotify.com/search/${encodeURIComponent(song.trackName + " " + song.artistName)}`
         }));
 
@@ -126,6 +127,7 @@ async function fetchTodaysSongs(count = 5) {
             artist: song.artistName,
             album: song.collectionName || "Single",
             cover: song.artworkUrl100.replace("100x100", "600x600"),
+            previewUrl: song.previewUrl || null,
             spotifyUrl: `https://open.spotify.com/search/${encodeURIComponent(song.trackName + " " + song.artistName)}`
         }));
 
